@@ -17,6 +17,13 @@ class UIManageS: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     
     var contentView = UIScrollView()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if LKRoot.settings?.use_dark_mode ?? false {
+            return .lightContent
+        }
+        return .default
+    }
+    
     // 控制 NAV
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

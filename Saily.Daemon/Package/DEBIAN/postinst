@@ -1,15 +1,26 @@
 echo Installing Saily
-echo Version: Major 0.6 Beta b1063
+echo Version: Major 0.6 Beta b1075
 
 echo Install Daemon Permission
 chown root:wheel /Library/LaunchDaemons/com.lakr233.Saily-Daemon.plist
 chmod 0644 /Library/LaunchDaemons/com.lakr233.Saily-Daemon.plist
 chmod +x /usr/bin/Saily.Daemon
 
-echo Delete Signal
-rm -f /var/root/.SailyBootstrap
+echo Install Application Permission
+chmod 0755 /Applications/Saily.app/Saily
+chown -R root:wheel /Applications/Saily.app
+chown -R root:wheel /Applications/Saily.app/*
 
+echo Delete Signal
+
+rm -f /var/root/.SailyBootstrap
 rm -rf /var/root/Saily.Daemon # Clean Up
+
+echo " "
+echo " "
+echo " --PLEASE WAIT DAEMON TO RUN UICACHE-- "
+echo " "
+echo " "
 
 echo Reload Daemon
 
@@ -23,11 +34,6 @@ launchctl unload /Library/LaunchDaemons/com.lakr233.Saily-Daemon.plist &> /dev/n
 launchctl load /Library/LaunchDaemons/com.lakr233.Saily-Daemon.plist &> /dev/null
 fi
 
-echo Install Application Permission
-chmod 0755 /Applications/Saily.app/Saily
-chown -R root:wheel /Applications/Saily.app
-chown -R root:wheel /Applications/Saily.app/*
-
 # Uicache
 # uicache /Applications/Saily.app
 # Broken uicache on Chimera, sorry to say.
@@ -37,5 +43,6 @@ chown -R root:wheel /Applications/Saily.app/*
 # Damemon will run uicache -a
 
 # Force dpkg to continue
-# echo "com.Lakr233.Saily install" | dpkg --set-selections  
+# echo "com.Lakr233.Saily install" | dpkg --set-selections
+
 exit 0

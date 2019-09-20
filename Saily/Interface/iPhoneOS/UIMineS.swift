@@ -8,6 +8,13 @@
 
 class UIMineS: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if LKRoot.settings?.use_dark_mode ?? false {
+            return .lightContent
+        }
+        return .default
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = LKRoot.ins_color_manager.read_a_color("main_background")

@@ -20,6 +20,13 @@ class UIHommyS: UIViewController {
     var card_details_vseffect_view: UIView?
     var close_image = UIImageView()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if LKRoot.settings?.use_dark_mode ?? false {
+            return .lightContent
+        }
+        return .default
+    }
+    
     // 控制 NAV
     override func viewWillAppear(_ animated: Bool) {
         view.backgroundColor = LKRoot.ins_color_manager.read_a_color("main_background")

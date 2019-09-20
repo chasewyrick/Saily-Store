@@ -387,3 +387,9 @@ extension UIView {
         animate(circleShape: circleShape, circleTransform: circleTransform, circleMask: circleMask, circleMaskTransform: circleMaskTransform, imageShape: imageShape, imageTransform: imageTransform, lineShapes: lineShapes, lineStrokeStart: lineStrokeStart, lineStrokeEnd: lineStrokeEnd, lineOpacity: lineOpacity)
     }
 }
+
+extension UINavigationController {
+    open override var preferredStatusBarStyle: UIStatusBarStyle {
+        return topViewController?.preferredStatusBarStyle ?? .default
+    }
+}

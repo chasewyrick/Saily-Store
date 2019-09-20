@@ -124,6 +124,7 @@
 		50A81580232B9C1B008F6667 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main_iPad.strings; sourceTree = "<group>"; };
 		50A81581232B9C1B008F6667 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50A81582232B9C1C008F6667 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50CDBC262335385B00855365 /* Saily.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Saily.entitlements; sourceTree = "<group>"; };
 		50E25DF3232E5FDF00BBFE6F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		50E25DF4232E5FDF00BBFE6F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
 		50E25DF5232E5FDF00BBFE6F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main_iPad.strings; sourceTree = "<group>"; };
@@ -318,6 +319,7 @@
 		AB081F93229D4BDC00ACA4DD /* Saily */ = {
 			isa = PBXGroup;
 			children = (
+				50CDBC262335385B00855365 /* Saily.entitlements */,
 				ABFBA7E6229D566E0070A17E /* AssSets */,
 				ABFBA7E8229D6D8B0070A17E /* Themes */,
 				ABFBA7E4229D563C0070A17E /* Engine */,
@@ -738,6 +740,9 @@
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
 							};
 						};
 					};
