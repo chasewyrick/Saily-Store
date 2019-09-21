@@ -335,7 +335,7 @@ class app_daemon_utils {
         while !FileManager.default.fileExists(atPath: LKRoot.root_path! + "/daemon.call/pendingExtract/Done") {
             usleep(233333)
         }
-        sleep(1) // Fix Permission
+        usleep(23333) // Fix Permission
         try? FileManager.default.removeItem(atPath: LKRoot.root_path! + "/daemon.call/pendingExtract/Done")
         appendLogToFile(log: "Daemon returned!")
         appendLogToFile(log: (try? String(contentsOfFile: LKRoot.root_path! + "/daemon.call/pendingExtract/Done")) ?? "")
@@ -382,7 +382,7 @@ class app_daemon_utils {
         while !FileManager.default.fileExists(atPath: LKRoot.root_path! + "/daemon.call/pendingPatch/Done") {
             usleep(233333)
         }
-        sleep(1) // Fix Permission
+        usleep(23333) // Fix Permission
         try? FileManager.default.removeItem(atPath: LKRoot.root_path! + "/daemon.call/pendingPatch/Done")
         appendLogToFile(log: "Daemon returned!")
         appendLogToFile(log: (try? String(contentsOfFile: LKRoot.root_path! + "/daemon.call/pendingPatch/Done")) ?? "")
@@ -487,7 +487,7 @@ export LC_ALL=C
             }
             usleep(2333)
         }
-        sleep(1) // Fix Permission
+        usleep(23333) // Fix Permission
         try? FileManager.default.removeItem(atPath: LKRoot.root_path! + "/daemon.call/pendingInstall/Done")
         appendLogToFile(log: "Daemon returned!")
         appendLogToFile(log: (try? String(contentsOfFile: LKRoot.root_path! + "/daemon.call/pendingInstall/Done")) ?? "")
