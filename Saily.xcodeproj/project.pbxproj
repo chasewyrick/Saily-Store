@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04118A1522AA7E0500C4D94E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04118A1722AA7E0500C4D94E /* InfoPlist.strings */; };
-		2492077972C5289AA58F0900 /* Pods_Saily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632572248FECFA15C3EAEC08 /* Pods_Saily.framework */; };
 		500B899D232A3BC000994982 /* DMRTLInstallTrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B899C232A3BC000994982 /* DMRTLInstallTrace.swift */; };
 		506E37BA232EA98E009A0B99 /* RootLessPatch.sh in Resources */ = {isa = PBXBuildFile; fileRef = 506E37B9232EA98E009A0B99 /* RootLessPatch.sh */; };
 		507A921123292A100097C343 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 507A921023292A100097C343 /* common.c */; };
@@ -51,6 +50,7 @@
 		ABFBA835229D8DC70070A17E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABFBA837229D8DC70070A17E /* Localizable.strings */; };
 		ABFBA83A229D943C0070A17E /* UIHommyS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBA839229D943C0070A17E /* UIHommyS.swift */; };
 		ABFBA83C229D99EB0070A17E /* AppUserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBA83B229D99EB0070A17E /* AppUserClass.swift */; };
+		B2428BE5FABD63408E8C744A /* Pods_Saily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EFFAEFBEEA27C4404336D9 /* Pods_Saily.framework */; };
 		B4046A6522DE2FAE00DF3835 /* LKItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4046A6422DE2FAE00DF3835 /* LKItemListViewController.swift */; };
 		B4046A6822DE7D6700DF3835 /* UIMineS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4046A6722DE7D6700DF3835 /* UIMineS.swift */; };
 		B4046A9322DEA63900DF3835 /* LKPackageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4046A9222DEA63900DF3835 /* LKPackageDetail.swift */; };
@@ -109,7 +109,7 @@
 		04118A1622AA7E0500C4D94E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		04118A1822AA7E0800C4D94E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04118A1B22AA7EDD00C4D94E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0497D28C8C77251284C02B92 /* Pods-Saily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saily.release.xcconfig"; path = "Target Support Files/Pods-Saily/Pods-Saily.release.xcconfig"; sourceTree = "<group>"; };
+		28464A5549FB8DD485E4BF0F /* Pods-Saily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saily.release.xcconfig"; path = "Target Support Files/Pods-Saily/Pods-Saily.release.xcconfig"; sourceTree = "<group>"; };
 		500B899C232A3BC000994982 /* DMRTLInstallTrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMRTLInstallTrace.swift; sourceTree = "<group>"; };
 		506E37B9232EA98E009A0B99 /* RootLessPatch.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RootLessPatch.sh; sourceTree = "<group>"; };
 		507021B8232D4F7C00D82C6E /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -150,7 +150,8 @@
 		50E25E09232E710500BBFE6F /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
 		50E25E0A232E710500BBFE6F /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		50E25E0B232E710500BBFE6F /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		632572248FECFA15C3EAEC08 /* Pods_Saily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77EFFAEFBEEA27C4404336D9 /* Pods_Saily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A7FA8BDEFCAE963A4F6CF1 /* Pods-Saily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saily.debug.xcconfig"; path = "Target Support Files/Pods-Saily/Pods-Saily.debug.xcconfig"; sourceTree = "<group>"; };
 		AB04C51C22A4436000B29F0C /* CardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetails.swift; sourceTree = "<group>"; };
 		AB081F91229D4BDC00ACA4DD /* Saily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB081F94229D4BDC00ACA4DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -264,7 +265,6 @@
 		B4EEB8D522DCDECF00477E39 /* LKIconGroupDetailView_RecentInstalled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKIconGroupDetailView_RecentInstalled.swift; sourceTree = "<group>"; };
 		B4EEB8D722DCE3A000477E39 /* LKIconGroupDetailView_RandomPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKIconGroupDetailView_RandomPackage.swift; sourceTree = "<group>"; };
 		B4EEB94A22DCF9F800477E39 /* LKNonWorkSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKNonWorkSearchBar.swift; sourceTree = "<group>"; };
-		EB61DE6DF7C27A6CD3935A5E /* Pods-Saily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saily.debug.xcconfig"; path = "Target Support Files/Pods-Saily/Pods-Saily.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,7 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2492077972C5289AA58F0900 /* Pods_Saily.framework in Frameworks */,
+				B2428BE5FABD63408E8C744A /* Pods_Saily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +290,8 @@
 		35F0FD9C7EF0DEEACEA4981B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EB61DE6DF7C27A6CD3935A5E /* Pods-Saily.debug.xcconfig */,
-				0497D28C8C77251284C02B92 /* Pods-Saily.release.xcconfig */,
+				A5A7FA8BDEFCAE963A4F6CF1 /* Pods-Saily.debug.xcconfig */,
+				28464A5549FB8DD485E4BF0F /* Pods-Saily.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -674,7 +674,7 @@
 			children = (
 				B4046A9022DE895C00DF3835 /* Aiolos.framework */,
 				B4B2416C22E369F800048604 /* Foundation.framework */,
-				632572248FECFA15C3EAEC08 /* Pods_Saily.framework */,
+				77EFFAEFBEEA27C4404336D9 /* Pods_Saily.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -686,13 +686,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB081FA3229D4BDD00ACA4DD /* Build configuration list for PBXNativeTarget "Saily" */;
 			buildPhases = (
-				B7442EAD344C0F49360F4584 /* [CP] Check Pods Manifest.lock */,
+				41D4A652BFA45FD4924A7452 /* [CP] Check Pods Manifest.lock */,
 				ABFBA7E7229D5AF20070A17E /* SwiftLint */,
 				AB081F8D229D4BDC00ACA4DD /* Sources */,
 				AB081F8E229D4BDC00ACA4DD /* Frameworks */,
 				AB081F8F229D4BDC00ACA4DD /* Resources */,
 				ABFBA825229D807B0070A17E /* Bump Version */,
-				5E1B6DB8775B399D328AF7CA /* [CP] Embed Pods Frameworks */,
+				ECE73316CCCDB6BFA305E944 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -800,6 +800,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		41D4A652BFA45FD4924A7452 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Saily-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		500B899B232A2AD400994982 /* Update Rootless Ress */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -817,23 +839,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nmkdir -p $SOURCE_ROOT/Packages/rootless\ncd $SOURCE_ROOT/Packages/rootless\nunzip ./../*.zip\n#rm -rf $SOURCE_ROOT/Packages/rootless/Applications\nrm -rf $SOURCE_ROOT/Packages/rootless/DEBIAN\nrm -rf $SOURCE_ROOT/Packages/rootless/var\nsed 's|/usr/bin/Saily.Daemon|/var/containers/Bundle/tweaksupport/usr/bin/Saily.Daemon|g' $SOURCE_ROOT/Packages/rootless/Library/LaunchDaemons/com.lakr233.Saily-Daemon.plist &> $SOURCE_ROOT/Packages/rootless/Library/LaunchDaemons/com.lakr233.Saily-Daemon.RTL.plist\nrm $SOURCE_ROOT/Packages/rootless/Library/LaunchDaemons/com.lakr233.Saily-Daemon.plist\ncp -r $SOURCE_ROOT/Packages/rootless/Applications $SOURCE_ROOT/Packages/rootless/Payload\ncd $SOURCE_ROOT/Packages/rootless/\nzip -r SailyRTL.ipa ./Payload \nrm -rf $SOURCE_ROOT/Packages/rootless/Payload\nmv ./SailyRTL.ipa ../SailySandBoxed.ipa\nmv ./usr/bin/Saily.Daemon ./Saily.Daemon\nchmod +x ./Saily.Daemon\nmv ./Library/LaunchDaemons/com.lakr233.Saily-Daemon.RTL.plist ./com.lakr233.Saily-Daemon.RTL.plist\nchmod 0755 com.lakr233.Saily-Daemon.RTL.plist\nmv ./Applications/Saily.app ./\nrm -rf ./usr ./Library ./Applications\nrm -rf ../*.zip\n# cd $SOURCE_ROOT/RootLessSupport\n# find . -name '.DS_Store' -delete\n# find . -name '._*' -delete\n# cp -f $SOURCE_ROOT/Packages/rootless/Saily.Daemon ./iosbinpack/usr/bin/\n# chmod +x /iosbinpack/usr/bin/Saily.Daemon\n# cp -f $SOURCE_ROOT/Packages/rootless/com.lakr233.Saily-Daemon.RTL.plist ./iosbinpack/LaunchDaemons\n# chmod 0755 ./iosbinpack/LaunchDaemons/com.lakr233.Saily-Daemon.RTL.plist\n# rm -f ./iosbinpack.tar ./tweaksupport.tar\n# tar -chzf ./iosbinpack.tar ./iosbinpack64\n# tar -chzf ./tweaksupport.tar ./tweaksupport\n# mv ./iosbinpack.tar $SOURCE_ROOT/Packages/rootless/\n# mv ./tweaksupport.tar $SOURCE_ROOT/Packages/rootless/\n\n";
-		};
-		5E1B6DB8775B399D328AF7CA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Saily/Pods-Saily-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Saily/Pods-Saily-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Saily/Pods-Saily-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		ABFBA7E7229D5AF20070A17E /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -942,26 +947,21 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexit 0\nrm /Volumes/Hikari/Kirina/repo/debs/*.deb\ncp $SOURCE_ROOT/Packages/*.deb /Volumes/Hikari/Kirina/repo/debs\n/Volumes/Hikari/Kirina/repo/update.sh\n";
 		};
-		B7442EAD344C0F49360F4584 /* [CP] Check Pods Manifest.lock */ = {
+		ECE73316CCCDB6BFA305E944 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Saily/Pods-Saily-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Saily-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-Saily/Pods-Saily-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Saily/Pods-Saily-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1271,7 +1271,7 @@
 		};
 		AB081FA4229D4BDD00ACA4DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB61DE6DF7C27A6CD3935A5E /* Pods-Saily.debug.xcconfig */;
+			baseConfigurationReference = A5A7FA8BDEFCAE963A4F6CF1 /* Pods-Saily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1285,18 +1285,19 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lakr233.Saily.Development;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Saily;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Saily/Engine/CoreBridge/Saily-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e";
 			};
 			name = Debug;
 		};
 		AB081FA5229D4BDD00ACA4DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0497D28C8C77251284C02B92 /* Pods-Saily.release.xcconfig */;
+			baseConfigurationReference = 28464A5549FB8DD485E4BF0F /* Pods-Saily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1310,11 +1311,12 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lakr233.Saily.Development;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Saily;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Saily/Engine/CoreBridge/Saily-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e";
 			};
 			name = Release;
 		};

@@ -214,6 +214,7 @@
 "通用 - 强制解锁 dpkg"="General - Forcer le déblocage du DPKG";
 "通用 - 强制解锁网络"="General - Forcer le déblocage réseau";
 "通用 - 获取设备 UDID"="General - insérer l'UDID";
+"通用 - 刷新桌面"="General - reSpring";
 "重启"="Redemarer l'application";
 "重新安装"="Reinstaller";
 "错误"="Erreur";

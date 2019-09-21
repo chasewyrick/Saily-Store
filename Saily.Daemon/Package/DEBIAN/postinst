@@ -1,5 +1,5 @@
 echo Installing Saily
-echo Version: Major 0.6 Beta b1075
+echo Version: Major 0.6 Beta Build 1109
 
 echo Install Daemon Permission
 chown root:wheel /Library/LaunchDaemons/com.lakr233.Saily-Daemon.plist
@@ -16,13 +16,15 @@ echo Delete Signal
 rm -f /var/root/.SailyBootstrap
 rm -rf /var/root/Saily.Daemon # Clean Up
 
-echo " "
-echo " "
+echo "⁠ "
+echo "⁠ "
 echo " --PLEASE WAIT DAEMON TO RUN UICACHE-- "
-echo " "
-echo " "
+echo "⁠ "
+echo "⁠ "
 
 echo Reload Daemon
+
+sleep 1
 
 nohupFile=/usr/bin/nohup
 if [ -f "$nohupFile" ]; then

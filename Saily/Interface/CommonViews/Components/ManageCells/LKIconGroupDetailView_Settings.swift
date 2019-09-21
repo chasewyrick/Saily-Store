@@ -351,23 +351,40 @@ extension manage_views.LKIconGroupDetailView_Settings: UITableViewDelegate {
             }
             return ret
         case 12:
-            let new = UIButton()
-            new.setTitle("通用 - 强制刷新桌面缓存".localized(), for: .normal)
-            new.titleLabel?.font = .systemFont(ofSize: 18)
-            new.setTitleColor(LKRoot.ins_color_manager.read_a_color("main_title_three"), for: .normal)
-            new.setTitleColor(touched_color, for: .highlighted)
-            new.addTarget(self, action: #selector(force_uicache), for: .touchUpInside)
-            new.contentHorizontalAlignment = .left
-            new.contentEdgeInsets = UIEdgeInsets(top: 0, left: LR_OFFSET, bottom: 0, right: 0)
-            ret.contentView.addSubview(new)
-            new.snp.makeConstraints { (x) in
-                x.top.equalTo(ret.contentView.snp.top)
-                x.left.equalTo(ret.contentView.snp.left)
-                x.bottom.equalTo(ret.contentView.snp.bottom)
-                x.right.equalTo(ret.contentView.snp.right)
-            }
-            return ret
+                let new = UIButton()
+                new.setTitle("通用 - 强制刷新桌面缓存".localized(), for: .normal)
+                new.titleLabel?.font = .systemFont(ofSize: 18)
+                new.setTitleColor(LKRoot.ins_color_manager.read_a_color("main_title_three"), for: .normal)
+                new.setTitleColor(touched_color, for: .highlighted)
+                new.addTarget(self, action: #selector(force_uicache), for: .touchUpInside)
+                new.contentHorizontalAlignment = .left
+                new.contentEdgeInsets = UIEdgeInsets(top: 0, left: LR_OFFSET, bottom: 0, right: 0)
+                ret.contentView.addSubview(new)
+                new.snp.makeConstraints { (x) in
+                    x.top.equalTo(ret.contentView.snp.top)
+                    x.left.equalTo(ret.contentView.snp.left)
+                    x.bottom.equalTo(ret.contentView.snp.bottom)
+                    x.right.equalTo(ret.contentView.snp.right)
+                }
+                return ret
         case 13:
+                let new = UIButton()
+                new.setTitle("通用 - 刷新桌面".localized(), for: .normal)
+                new.titleLabel?.font = .systemFont(ofSize: 18)
+                new.setTitleColor(LKRoot.ins_color_manager.read_a_color("main_title_three"), for: .normal)
+                new.setTitleColor(touched_color, for: .highlighted)
+                new.addTarget(self, action: #selector(force_respring), for: .touchUpInside)
+                new.contentHorizontalAlignment = .left
+                new.contentEdgeInsets = UIEdgeInsets(top: 0, left: LR_OFFSET, bottom: 0, right: 0)
+                ret.contentView.addSubview(new)
+                new.snp.makeConstraints { (x) in
+                    x.top.equalTo(ret.contentView.snp.top)
+                    x.left.equalTo(ret.contentView.snp.left)
+                    x.bottom.equalTo(ret.contentView.snp.bottom)
+                    x.right.equalTo(ret.contentView.snp.right)
+                }
+                return ret
+        case 14:
             let new = UILabel(text: "关于".localized())
             new.font = .boldSystemFont(ofSize: 22)
             new.textColor = LKRoot.ins_color_manager.read_a_color("main_title_three")
@@ -396,7 +413,7 @@ extension manage_views.LKIconGroupDetailView_Settings: UITableViewDelegate {
 //                x.right.equalTo(ret.contentView.snp.right)
 //            }
 //            return ret
-        case 14:
+        case 15:
             let new = UIButton()
             new.setTitle("查看 - 软件帮助手册".localized(), for: .normal)
             new.titleLabel?.font = .systemFont(ofSize: 18)
@@ -430,7 +447,7 @@ extension manage_views.LKIconGroupDetailView_Settings: UITableViewDelegate {
 //                x.right.equalTo(ret.contentView.snp.right)
 //            }
 //            return ret
-        case 15:
+        case 16:
             let new = UILabel(text: "Copyright © 2019 Saily Team. All rights reserved.".localized())
             new.font = .boldSystemFont(ofSize: 8)
             new.textColor = .lightGray
@@ -452,7 +469,7 @@ extension manage_views.LKIconGroupDetailView_Settings: UITableViewDelegate {
         let title_size: CGFloat = 48
         let button_size: CGFloat = 30
         switch indexPath.row {
-        case 0, 5, 8, 13:
+        case 0, 5, 8, 14:
             return title_size
         default:
             return button_size
@@ -818,7 +835,7 @@ extension manage_views.LKIconGroupDetailView_Settings: UITableViewDelegate {
             LKRoot.queue_dispatch.async {
                 LKDaemonUtils.daemon_msg_pass(msg: "init:req:uicache")
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 12) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 24) {
                 UIApplication.shared.endIgnoringInteractionEvents()
                 IHProgressHUD.dismiss()
                 presentStatusAlert(imgName: "Done", title: "完成".localized(), msg: "".localized())
@@ -827,9 +844,36 @@ extension manage_views.LKIconGroupDetailView_Settings: UITableViewDelegate {
         alert.presentToCurrentViewController()
     }
     
-//    @objc func get_software_info() {
-//
-//    }
+    //    @objc func get_software_info() {
+    //
+    //    }
+    
+    @objc func force_respring() {
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.impactOccurred()
+        let alert = UIAlertController(title: "⚠️".localized(),
+                                      message: "这回花费一些时间".localized(),
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "取消".localized(), style: .cancel, handler: { (_) in
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+        }))
+        alert.addAction(UIAlertAction(title: "确认".localized(), style: .destructive, handler: { (_) in
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+            UIApplication.shared.beginIgnoringInteractionEvents()
+            IHProgressHUD.show()
+            LKRoot.queue_dispatch.async {
+                LKDaemonUtils.daemon_msg_pass(msg: "init:req:reSpring")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 12) {
+                UIApplication.shared.endIgnoringInteractionEvents()
+                IHProgressHUD.dismiss()
+                presentStatusAlert(imgName: "Done", title: "完成".localized(), msg: "".localized())
+            }
+        }))
+        alert.presentToCurrentViewController()
+    }
     
     @objc func get_help() {
         let generator = UIImpactFeedbackGenerator(style: .heavy)
@@ -865,5 +909,6 @@ extension manage_views.LKIconGroupDetailView_Settings: UITableViewDelegate {
         
     }
 }
+
 
 
