@@ -26,7 +26,7 @@ int command_line_main(int argc, const char * argv[]) {
 //        redirectConsoleLogToVarRoot();
     }
     
-    NSLog(@"[i] 准备启动 Daemon, 版本代号 0.6-b1109");
+    NSLog(@"[i] 准备启动 Daemon, 版本代号 0.6-b1116");
     
     bool rootless = false;
     
