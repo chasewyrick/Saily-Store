@@ -267,6 +267,10 @@ extension LKPackageSearch: UICollectionViewDelegateFlowLayout, UICollectionViewD
             item.removeFromSuperview()
         }
         
+        if indexPath.row >= search_result.count {
+            return ret
+        }
+        
         let pack = (LKRoot.container_packages[search_result[indexPath.row]] ?? DBMPackage()).copy()
         
         let version = LKRoot.ins_common_operator.PAK_read_newest_version(pack: pack).1
