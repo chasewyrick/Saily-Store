@@ -1,6 +1,6 @@
 # Saily-Store  
 
-The most magical package manager forever. (Experimental Branch)   
+The most magical package manager forever. (Main Branch)   
 
 # Acknowledgements:    
 
@@ -36,6 +36,8 @@ More thins coming later.... I got summery holiday homeworks to do.
 - Freezing on some Chimera/Electra jailbreak  
 - Download may failed and we still have the file cause dpkg not to read it  
 - dpkg depends may not handled in right way  
+- Version cooperation seems to have some problems to fix but mostly works  
+- Depends will ignore version minimal check  
 
 # Road Map
 
