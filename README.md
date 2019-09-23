@@ -1,6 +1,8 @@
 # Saily-Store  
 
 The most magical package manager forever. (Main Branch)   
+Official Repo GitHub -> https://ouop.github.io/  
+Official Repo Gitee (Asia Friendly) -> https://lakrowo.gitee.io/repo/  
 
 # Acknowledgements:    
 
