@@ -24,7 +24,8 @@ Translator:
 - GitHub: dabeecao Vietnamese  
 - Twitter: @ammaripa @busadoki Arabic  
 - Twitter: @WorldlyDev Norwegian  
-- Twitter: @Cimmerian_Iter French & French-CA    
+- Twitter: @Cimmerian_Iter French & French-CA
+- GitHub: @wbraffman @ZenIsBestWolf English  
 
 Used Project:   
 - Monkey Dev: https://github.com/AloneMonkey/MonkeyDev  
