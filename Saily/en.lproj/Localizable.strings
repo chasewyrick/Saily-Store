@@ -11,23 +11,23 @@
 "https://lakrowo.gitee.io/Saily/" = "https://lakraream.github.io/Saily/EN/";
 "https://lakrowo.gitee.io/AreamN/" = "https://lakraream.github.io/AreamN/EN/";
 
-// If GitHub runs slow in your contury, un comment this and delete two line above.
+// If GitHub runs slow in your country, un comment this and delete two line above.
 // "https://lakrowo.gitee.io/Saily/" = "https://lakraream.github.io/Saily/EN/";
 // "https://lakrowo.gitee.io/AreamN/" = "https://lakraream.github.io/AreamN/EN/";
 
 
 
-"搜索中心" = "Search Center";
+"搜索中心" = "Search";
 "在这里，寻找可能" = "We are here for possibility";
-"查找插件/文章" = "Search Everything";
+"查找插件/文章" = "Search";
 "发现" = "Discover";
 "管理" = "Manage";
 "搜索" = "Search";
 "世界" = "World";
 "警告" = "Warning";
-"您的设备分辨率太低，这会影响到UI布局。我们不推荐您使用本产品。您可以通过设置页面的高级选项安装Cydia" = "Your device's screen pixel hit the minimal requirement. Please consider use Cydia instead of enjoying error UI.";
+"您的设备分辨率太低，这会影响到UI布局。我们不推荐您使用本产品。您可以通过设置页面的高级选项安装Cydia" = "Your device's screen pixel count does not reach the minimal requirement. Please use Cydia instead of using a buggy UI.";
 "了解" = "Understand";
-"管理中心" = "Manage Center";
+"管理中心" = "Manage";
 "在这里，你和你的全部" = "Here is all you need";
 "今日精选" = "Featured Today";
 "- 正在加载 -" = "- Downloading -";
@@ -57,7 +57,7 @@
 "软件逻辑" = "Application Defaults";
 "通用 - 全局下载超时" = "General - Network Timeout";
 "通用 - 获取设备 UDID" = "General - Set UDID";
-"通用 - 强制解锁 dpkg" = "General - Force Unlock DPKG";
+"通用 - 强制解锁 DPKG" = "General - Force Unlock DPKG";
 "通用 - 强制解锁网络" = "General - Force Unlock Network";
 "通用 - 强制刷新桌面缓存" = "General - Run uicache";
 "通用 - 刷新桌面" = "General - Respring";
@@ -72,10 +72,10 @@
 " " = " ";
 "已尝试刷新新闻源。" = "Done";
 "已尝试刷新软件源" = "Refreshing...";
-"软件包的更新将在后台进行。" = "Packages will download and refresh in background.";
+"软件包的更新将在后台进行。" = "Packages will download and refresh in the background.";
 "准备导入如下的新闻源\n" = "Attempt to import following news repo\n\n";
 "失败" = "Failed";
-"没有在剪贴板中找到有效的新闻源地址" = "No link validated in pasteboard";
+"没有在剪贴板中找到有效的新闻源地址" = "No link validated in clipboard";
 "即将导入" = "Will import\n\n";
 "执行" = "Run";
 "导入成功" = "Imported";
@@ -92,8 +92,8 @@
 "请输入一个整数" = "Please input a valid integer";
 "网络超时" = "Network Timeout";
 "你的操作已经保存。" = "Your operation was saved.";
-"最近安装" = "Recent Install";
-"这里包含了您在系统中已经安装的软件包。" = "This section contains recent install packages.";
+"最近安装" = "Recently Installed";
+"这里包含了您在系统中已经安装的软件包。" = "This section contains the recently installed packages.";
 "点击来展开一些最近的安装 ▼" = "Touch to open ▼";
 "收起 ▲" = "Collapse ▲";
 "导出全部" = "Export All";
@@ -104,7 +104,7 @@
 "已安装" = "Installed";
 "排序" = "Sort";
 "排序方法" = "Sort Method";
-"您希望以怎样的方法进行排序？" = "How you wish to sort?";
+"您希望以怎样的方法进行排序？" = "How do you wish to sort?";
 "日期" = "Date";
 "名称" = "Name";
 "未知错误" = "Unknown Error";
@@ -113,7 +113,7 @@
 "点击来展开全部新闻源 ▼" = "Touch to open ▼";
 "请等待首页刷新进程完成" = "Please wait for the first refresh";
 "添加" = "Add";
-" 的地址已经复制到剪贴板" = " has been cpoied to pasteboard";
+" 的地址已经复制到剪贴板" = " has been copied to clipboard";
 "删除" = "Delete";
 "删除成功" = "Deleted";
 "你已经成功的移除了这个新闻源" = "You have successfully removed this News Repo.";
@@ -126,7 +126,7 @@
 "请检查源地址或网络连接并在试一次。" = "Please check the link or try again";
 "添加成功" = "Succeed";
 " 已经添加到你的仓库" = " has been added to your database";
-"提示" = "Tip:";
+"提示" = "Note:";
 "这个新闻源的刷新进程在上一次刷新中意外退出了，我们建议您将其移除，或者尝试再次刷新。" = "This News Repo failed to refresh recently. Consider a refresh or remove it?";
 "刷新完成" = "Succeed";
 "我们已经按照您的要求刷新了新闻源。" = "We have refreshed your News Repo";
@@ -144,7 +144,7 @@
 "请尝试在设置页面刷新软件源" = "Please consider refreshing packages and sources on the settings page";
 "这个软件源可能不包含这个软件包" = "This repo does NOT contain this package";
 "错误" = "Error";
-"软件包信息校验失败，请尝试刷新。" = "Failed to vaildate package information";
+"软件包信息校验失败，请尝试刷新。" = "Failed to validate package information";
 "因出现未知错误现提供软件包的原始信息：\n\n" = "No available depiction page available\n\n";
 "无更多信息" = "Nothing More";
 "发生了未知错误。" = "Unknown Error Occurred";
@@ -168,17 +168,17 @@
 "使用虚拟识别码：" = "VituralUDID - ";
 "获取" = "GET";
 "更改" = "MODIFY";
-"等待执行" = "AWAIT";
+"等待执行" = "CONFIRM";
 "向权限经理发送消息失败" = "Failed to talk to privileged daemon";
-"无法添加到下载队列，请尝试刷新软件包" = "Failed to submit a download, please try to refresh";
+"无法添加到下载队列，请尝试刷新软件包" = "Failed to download, please try to refresh";
 "暂不支持付费插件下载" = "We currently do not support paid packages";
 "请选择一个操作" = "Please choose an operation";
 "选择" = "Choices";
 "更改" = "MODIFY";
 "请求队列" = "Requests";
 "操作队列信息校验失败" = "Operation queue information mismatch";
-"操作队列" = "OPERATIONS";
-"先决条件" = "PREREQUISITES";
+"操作队列" = "Queue";
+"先决条件" = "Dependecies";
 "即将执行" = "PENDING CONFIRM";
 "提交" = "SUBMIT";
 "这个栏目没有内容" = "Section Cleared";
@@ -216,7 +216,7 @@
 "这个操作将产生危险，你确定吗" = "This is super dangerous";
 "已按照你的要求解锁dpkg" = "Unlocked DPKG";
 "APT软件" = "APT Standard Software";
-"剪贴板" = "Pasteboard Scan";
+"剪贴板" = "Clipboard Scan";
 "请选择一个导入对象" = "Please choose a way to import";
 "你想如何获得帮助？" = "How can we help you?";
 "软件源分享二维码 ->" = "Repo Sharing - QR Code";
