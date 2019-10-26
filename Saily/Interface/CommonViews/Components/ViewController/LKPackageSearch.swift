@@ -53,7 +53,7 @@ class LKPackageSearch: UIViewController {
         collection_view.dataSource = self
         collection_view.delegate = self
         collection_view.clipsToBounds = false
-        collection_view.register(cellWithClass: UICollectionViewCell.self)
+        collection_view.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "LKPackageSearch")
         view.addSubview(collection_view)
         collection_view.snp.makeConstraints { (x) in
             x.edges.equalTo(self.view.snp.edges)
@@ -117,8 +117,7 @@ extension LKPackageSearch: UISearchBarDelegate {
             DispatchQueue.main.async { [weak self] in
                 UIApplication.shared.endIgnoringInteractionEvents()
                 IHProgressHUD.dismiss()
-                self?.collection_view.reloadData {
-                }
+                self?.collection_view.reloadData()
             }
         }
         
@@ -260,7 +259,8 @@ extension LKPackageSearch: UICollectionViewDelegateFlowLayout, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let ret = collectionView.dequeueReusableCell(withClass: UICollectionViewCell.self, for: indexPath)
+//        let ret = collectionView.dequeueReusableCell(withClass: UICollectionViewCell.self, for: indexPath)
+        let ret = collectionView.dequeueReusableCell(withReuseIdentifier: "LKPackageSearch", for: indexPath)
         let cell = cell_views.LKPackageCLCell()
         
         for item in ret.contentView.subviews {

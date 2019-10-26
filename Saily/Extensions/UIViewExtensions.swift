@@ -20,6 +20,13 @@ extension UIView {
     func addSubviews(_ views: [UIView]) {
         views.forEach{ self.addSubview($0) }
     }
+    
+    func removeSubviews() {
+        for item in self.subviews {
+            item.removeFromSuperview()
+        }
+    }
+    
 }
 
 extension UIView {
@@ -391,5 +398,16 @@ extension UIView {
 extension UINavigationController {
     open override var preferredStatusBarStyle: UIStatusBarStyle {
         return topViewController?.preferredStatusBarStyle ?? .default
+    }
+}
+
+public extension UIButton {
+    
+    private var states: [UIControl.State] {
+        return [.normal, .selected, .highlighted, .disabled]
+    }
+    
+    func setTitleColorForAllStates(_ color: UIColor) {
+        states.forEach { setTitleColor(color, for: $0) }
     }
 }

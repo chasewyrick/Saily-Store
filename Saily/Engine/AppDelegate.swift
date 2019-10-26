@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var mainStoryboard: UIStoryboard = UIStoryboard(name: "Main_iPhone", bundle: nil)
         if LKRoot.is_iPad {
-            mainStoryboard = UIStoryboard(name: "Main_iPad", bundle: nil)
+//            mainStoryboard = UIStoryboard(name: "Main_iPad", bundle: nil)
         }
         let navigationController = mainStoryboard.instantiateInitialViewController()!
         self.window!.rootViewController = navigationController
@@ -83,7 +83,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(urlString)
             
             if urlString.hasPrefix("sailypra://") {
-                var ret = urlString.dropFirst("sailypra://".count).to_String().base64Decoded ?? ""
+                let str: String = urlString.dropFirst("sailypra://".count).to_String()
+                var ret = str.base64Decoded() ?? ""
                 if URL(string: ret) != nil {
                     if !ret.hasSuffix("/") {
                         ret += "/"
@@ -132,7 +133,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return
             } // urlString.hasPrefix("sailypra://")
             if urlString.hasPrefix("sailynra://") {
-                var ret = urlString.dropFirst("sailynra://".count).to_String().base64Decoded ?? ""
+                let str: String = urlString.dropFirst("sailynra://".count).to_String()
+                var ret = str.base64Decoded() ?? ""
                 if URL(string: ret) != nil {
                     if !ret.hasSuffix("/") {
                         ret += "/"

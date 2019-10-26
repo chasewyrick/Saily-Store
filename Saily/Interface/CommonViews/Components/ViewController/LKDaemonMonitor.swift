@@ -59,7 +59,8 @@ class LKDaemonMonitor: UIViewController {
     var checkTimeOut = 256 // like some 60s?
     func updateText(round: Int = 0) {
         let str = (try? String(contentsOfFile: LKRoot.root_path! + "/daemon.call/out.txt")) ?? ""
-        textView.scrollToBottom()
+        let range = NSMakeRange((textView.text as NSString).length - 1, 1)
+        textView.scrollRangeToVisible(range)
         textView.text = str
         if round == checkTimeOut {
             presentStatusAlert(imgName: "Warning", title: "⚠️", msg: "执行任务的时间超出了预期\n你可以选择手动退出")

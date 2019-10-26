@@ -14,7 +14,7 @@ target 'Saily' do
   pod 'SDWebImage'
   pod 'SWCompression'
   
-  pod 'SwifterSwift'
+  #pod 'SwifterSwift'
   
   # pod 'Hero'
   pod 'SnapKit'
@@ -26,20 +26,20 @@ target 'Saily' do
   pod 'JJFloatingActionButton'
   
   pod 'SwiftLint', :configurations => ['Debug']
-  pod 'LookinServer', :configurations => ['Debug']
-  pod 'DoraemonKit/Core', '~> 1.1.7', :configurations => ['Debug']
-  pod 'DoraemonKit/WithGPS', '~> 1.1.7', :configurations => ['Debug']
-  pod 'DoraemonKit/WithLoad', '~> 1.1.7', :configurations => ['Debug']
-  pod 'DoraemonKit/WithLogger', '~> 1.1.7', :configurations => ['Debug']
+#  pod 'LookinServer', :configurations => ['Debug']
+#  pod 'DoraemonKit/Core', '~> 1.1.7', :configurations => ['Debug']
+#  pod 'DoraemonKit/WithGPS', '~> 1.1.7', :configurations => ['Debug']
+#  pod 'DoraemonKit/WithLoad', '~> 1.1.7', :configurations => ['Debug']
+#  pod 'DoraemonKit/WithLogger', '~> 1.1.7', :configurations => ['Debug']
   
   # DoKit DEP
-  pod 'BSBacktraceLogger', :configurations => ['Debug']
-  pod 'CocoaLumberjack', :configurations => ['Debug']
-  pod 'DoraemonKit', :configurations => ['Debug']
-  pod 'PNChart', :configurations => ['Debug']
-  pod 'UICountingLabel', :configurations => ['Debug']
-  pod 'UITextView+Placeholder', :configurations => ['Debug']
-  pod 'fishhook', :configurations => ['Debug']
+#  pod 'BSBacktraceLogger', :configurations => ['Debug']
+#  pod 'CocoaLumberjack', :configurations => ['Debug']
+#  pod 'DoraemonKit', :configurations => ['Debug']
+#  pod 'PNChart', :configurations => ['Debug']
+#  pod 'UICountingLabel', :configurations => ['Debug']
+#  pod 'UITextView+Placeholder', :configurations => ['Debug']
+#  pod 'fishhook', :configurations => ['Debug']
   
 end
 

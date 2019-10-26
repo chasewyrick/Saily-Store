@@ -137,9 +137,9 @@ class LKRepoFeatured: UIViewController {
                 x.top.equalTo(sep.snp.bottom).offset(12)
                 x.height.equalTo(desstr.intrinsicContentSize.height)
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
-                self.sum_content_height += Int(desstr.height)
-            })
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                self.sum_content_height += Int(desstr.frame.height)
+            }
             UIApplication.shared.endIgnoringInteractionEvents()
         }
         

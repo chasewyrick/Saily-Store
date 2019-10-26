@@ -118,7 +118,7 @@ class app_daemon_utils {
         sender_lock = true
         object.call_to_daemon_(with: "com.Lakr233.Saily.MsgPass.read.Begin")
         usleep(2333)
-        let charasets = msg.charactersArray
+        let charasets = Array(msg)
         for item in charasets {
             let cs = String(item)
             let str = "com.Lakr233.Saily.MsgPass.read." + cs

@@ -13,11 +13,11 @@
 @_exported import Alamofire
 @_exported import SDWebImage
 @_exported import StatusAlert
-@_exported import SwifterSwift
+//@_exported import SwifterSwift
 @_exported import SWCompression
 @_exported import SwiftMessages
 @_exported import IHProgressHUD
 
 #if DEBUG
-@_exported import DoraemonKit
+//@_exported import DoraemonKit
 #endif

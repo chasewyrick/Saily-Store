@@ -103,8 +103,8 @@ extension common_views {
             do {
                 
                 if (LKRoot.settings?.use_dark_mode ?? false) && should_border_if_dark {
-                    ret.borderWidth = 1
-                    ret.borderColor = .gray
+                    ret.layer.borderWidth = 1
+                    ret.layer.borderColor = UIColor.gray.cgColor
                 }
                 
                 ret.backgroundColor = LKRoot.ins_color_manager.read_a_color("main_background")
@@ -262,8 +262,8 @@ extension common_views {
             do {
                 
                 if (LKRoot.settings?.use_dark_mode ?? false) && should_border_if_dark {
-                    ret.borderWidth = 1
-                    ret.borderColor = .gray
+                    ret.layer.borderWidth = 1
+                    ret.layer.borderColor = UIColor.gray.cgColor
                 }
                 
                 ret.backgroundColor = LKRoot.ins_color_manager.read_a_color("main_background")
