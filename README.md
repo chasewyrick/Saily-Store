@@ -2,6 +2,7 @@
 
 The most magical package manager forever. (Main Branch)   
 
+#### The next release aka Saily-0.7 will be arrived in this fall contains advanced features along with iPad multiple windows support, so this version is out of my(@Lakr233) maintenance. @TrySaily will help you out if there is any problem and he is going to fix small problems.
   
 Official Repo GitHub -> https://ouop.github.io/  
 Official Repo Gitee (Asia Friendly) -> https://lakrowo.gitee.io/repo/  
